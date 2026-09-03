@@ -1,0 +1,1035 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body {
+    overscroll-behavior-y: none;
+    touch-action: pan-x pan-y;
+  }
+
+  body {
+    font-family:
+      "Plus Jakarta Sans",
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    background-color: #f5faf7;
+    color: #17211d;
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
+  }
+
+  html.dark body {
+    background-color: #0a110e;
+    color: #f1f7f4;
+  }
+}
+
+/* Base Canvas & Outer Wrapper */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark,
+html.dark body,
+html.dark #root,
+html.dark .min-h-screen {
+  background-color: #0a110e !important;
+  color: #f1f7f4 !important;
+}
+
+/* Header & Main Outer Layout */
+html.dark header {
+  background-color: rgba(13, 20, 16, 0.95) !important;
+  border-color: #1c2d24 !important;
+}
+
+html.dark header .bg-white {
+  background-color: #131e19 !important;
+  border-color: #213329 !important;
+}
+
+/* Android Device Mockup Frame & Screen Wrapper */
+html.dark #android-phone-frame {
+  background-color: #101a16 !important;
+  border-color: #060a08 !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75) !important;
+}
+
+html.dark #android-status-bar {
+  background-color: #101a16 !important;
+  color: #f1f7f4 !important;
+  border-color: #1e3027 !important;
+}
+
+html.dark #android-status-bar svg,
+html.dark #android-status-bar span {
+  color: #f1f7f4 !important;
+}
+
+html.dark #android-phone-frame > div:nth-child(2) {
+  background-color: #0b1310 !important;
+}
+
+html.dark #android-phone-frame > div:last-child {
+  background-color: #101a16 !important;
+  border-color: #1e3027 !important;
+}
+
+html.dark #android-phone-frame > div:last-child > div {
+  background-color: rgba(241, 247, 244, 0.25) !important;
+}
+
+/* Fixed Top Bar & Headers */
+html.dark #payflow-top-bar-container,
+html.dark #salary-details-screen > div:first-child,
+html.dark #salary-comparison-screen > div:first-child,
+html.dark #salary-details-empty-screen > div:first-child,
+html.dark #salary-history-screen > div:first-child,
+html.dark #reports-view-screen > div:first-child,
+html.dark #profile-view-screen > div:first-child,
+html.dark #add-salary-screen > div:first-child {
+  background-color: rgba(16, 26, 22, 0.96) !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Top Navigation Actions */
+#payflow-top-actions-right button,
+#payflow-quick-theme-toggle-btn,
+#payflow-notification-btn,
+#payflow-top-menu-btn {
+  background-color: #ffffff !important;
+  border-color: #e2ece7 !important;
+  color: #4a5550 !important;
+}
+
+#payflow-top-actions-right button:hover,
+#payflow-quick-theme-toggle-btn:hover,
+#payflow-notification-btn:hover,
+#payflow-top-menu-btn:hover {
+  background-color: #e8f7f0 !important;
+  border-color: #c5ebdb !important;
+  color: #008f5b !important;
+}
+
+html.dark #payflow-top-actions-right button,
+html.dark #payflow-quick-theme-toggle-btn,
+html.dark #payflow-notification-btn,
+html.dark #payflow-top-menu-btn {
+  background-color: #14241d !important;
+  border-color: #243b2e !important;
+  color: #a1b3aa !important;
+}
+
+html.dark #payflow-top-actions-right button:hover,
+html.dark #payflow-quick-theme-toggle-btn:hover,
+html.dark #payflow-notification-btn:hover,
+html.dark #payflow-top-menu-btn:hover {
+  background-color: #1f362b !important;
+  border-color: #2e523f !important;
+  color: #10e594 !important;
+}
+
+/* Sub-screen header back & action buttons */
+#salary-details-back-btn,
+#share-slip-btn,
+#history-back-btn,
+#comparison-back-btn {
+  background-color: #ffffff !important;
+  border-color: #e2ece7 !important;
+  color: #17211d !important;
+}
+
+#salary-details-back-btn:hover,
+#share-slip-btn:hover,
+#history-back-btn:hover,
+#comparison-back-btn:hover {
+  background-color: #e8f7f0 !important;
+  border-color: #c5ebdb !important;
+  color: #008f5b !important;
+}
+
+html.dark #salary-details-back-btn,
+html.dark #share-slip-btn,
+html.dark #history-back-btn,
+html.dark #comparison-back-btn {
+  background-color: #14241d !important;
+  border-color: #243b2e !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #salary-details-back-btn:hover,
+html.dark #share-slip-btn:hover,
+html.dark #history-back-btn:hover,
+html.dark #comparison-back-btn:hover {
+  background-color: #1f362b !important;
+  border-color: #2e523f !important;
+  color: #10e594 !important;
+}
+
+/* Bottom Navigation Bar */
+html.dark #bottom-navigation-bar,
+html.dark #bottom-nav-bar {
+  background-color: rgba(14, 23, 19, 0.97) !important;
+  border-color: #1e3027 !important;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark #bottom-navigation-bar .bg-\[\#EDF2F0\] {
+  background-color: #1e3027 !important;
+}
+
+html.dark #bottom-navigation-bar span {
+  color: #8fa298 !important;
+}
+
+html.dark #bottom-navigation-bar .text-\[\#475569\] {
+  color: #8fa298 !important;
+}
+
+html.dark #bottom-navigation-bar .text-\[\#1E293B\],
+html.dark #bottom-navigation-bar .font-bold {
+  color: #f1f7f4 !important;
+}
+
+html.dark #bottom-navigation-bar .text-\[\#00B377\] {
+  color: #10e594 !important;
+}
+
+html.dark #bottom-navigation-bar .bg-\[\#00B377\] {
+  background-color: #10e594 !important;
+  box-shadow: 0 1px 8px rgba(16, 229, 148, 0.45) !important;
+}
+
+html.dark #nav-item-add > div:first-child {
+  background-color: #101a16 !important;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.6),
+    0 0 12px rgba(16, 229, 148, 0.25) !important;
+}
+
+html.dark #nav-item-add span {
+  color: #10e594 !important;
+}
+
+/* Device Switcher & Screen Picker Tabs */
+html.dark .bg-white.rounded-xl.border,
+html.dark .bg-white.p-1.rounded-xl.border {
+  background-color: #121d18 !important;
+  border-color: #21352c !important;
+}
+
+/* Generic White Background Surfaces & Cards in Dark Mode */
+html.dark .bg-white,
+html.dark [class*="bg-white/"] {
+  background-color: #14221c !important;
+}
+
+html.dark .bg-\[\#F5FAF7\],
+html.dark .bg-\[\#FAFDFB\],
+html.dark .bg-\[\#F8FAF9\],
+html.dark .bg-\[\#F1F6F3\],
+html.dark .bg-\[\#F3F7F5\],
+html.dark .bg-\[\#F8FCFA\],
+html.dark .bg-\[\#F6FAF8\],
+html.dark .bg-\[\#F4FAF7\],
+html.dark .bg-\[\#F9FCFA\],
+html.dark .bg-\[\#FDFBFB\] {
+  background-color: #101a16 !important;
+}
+
+/* Hero Salary Card */
+html.dark #hero-salary-card {
+  background: linear-gradient(
+    135deg,
+    #0e2920 0%,
+    #143a2d 50%,
+    #091f17 100%
+  ) !important;
+  border-color: #1e4e3d !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+  color: #e8f7f1 !important;
+}
+
+html.dark #hero-salary-card svg path {
+  opacity: 0.15 !important;
+}
+
+html.dark #hero-salary-card .text-\[\#0E3B2E\],
+html.dark #hero-salary-card .text-\[\#08281F\],
+html.dark #hero-salary-card .text-\[\#1B5746\],
+html.dark #hero-salary-card .text-\[\#226352\] {
+  color: #e8f7f1 !important;
+}
+
+html.dark #hero-salary-card .bg-white\/25,
+html.dark #hero-salary-card .bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark #hero-salary-card .border-white\/70 {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+html.dark #hero-salary-card > div:last-child {
+  background-color: rgba(10, 28, 22, 0.95) !important;
+  border-color: #1a4435 !important;
+}
+
+/* Process Flow Bar */
+html.dark #salary-process-flow-card {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark #salary-process-flow-card .bg-\[\#FFECEC\] {
+  background-color: #0d1612 !important;
+  border: 1px solid #20342a !important;
+}
+
+html.dark #salary-process-flow-card .border-\[\#F0F4F2\] {
+  border-color: #1e3027 !important;
+}
+
+html.dark #salary-process-flow-card .from-\[\#007A4D\].to-\[\#00A86B\] {
+  background: linear-gradient(90deg, #008f5b 0%, #10e594 100%) !important;
+  box-shadow: 0 0 10px rgba(16, 229, 148, 0.35) !important;
+}
+
+html.dark #salary-process-flow-card .from-\[\#E11D48\].to-\[\#D83B3B\] {
+  background: linear-gradient(90deg, #ef4444 0%, #f87171 100%) !important;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.35) !important;
+}
+
+/* Salary Details Screen */
+html.dark #details-hero-card {
+  background: linear-gradient(
+    135deg,
+    #0e2a20 0%,
+    #153f31 50%,
+    #0a2219 100%
+  ) !important;
+  border-color: #1f4f3e !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+}
+
+html.dark #details-hero-card.border-\[\#F87171\]\/40 {
+  background: linear-gradient(
+    135deg,
+    #2e1214 0%,
+    #451a1d 50%,
+    #200b0d 100%
+  ) !important;
+  border-color: #592025 !important;
+}
+
+html.dark #details-hero-card .text-\[\#0E3B2E\],
+html.dark #details-hero-card .text-\[\#08281F\],
+html.dark #details-hero-card .text-\[\#1B5746\],
+html.dark #details-hero-card .text-\[\#226352\],
+html.dark #details-hero-card .text-\[\#4A0E0E\],
+html.dark #details-hero-card .text-\[\#3E0909\],
+html.dark #details-hero-card .text-\[\#8A1A1A\],
+html.dark #details-hero-card .text-\[\#821818\] {
+  color: #f1f7f4 !important;
+}
+
+html.dark #details-hero-card .bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark #details-hero-card .border-white\/70 {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+html.dark #details-hero-card > div:last-child {
+  background-color: rgba(10, 28, 22, 0.95) !important;
+  border-color: #1a4435 !important;
+}
+
+html.dark #details-hero-card.border-\[\#F87171\]\/40 > div:last-child {
+  background-color: rgba(46, 18, 20, 0.95) !important;
+  border-color: #4d1a1e !important;
+}
+
+html.dark #details-tab-switcher {
+  background-color: #101a16 !important;
+  border-color: #21352c !important;
+}
+
+html.dark #details-tab-switcher button {
+  background-color: #101a16 !important;
+  color: #8fa298 !important;
+}
+
+html.dark #details-tab-switcher button.bg-\[\#E8F7F0\] {
+  background-color: #163024 !important;
+  color: #10e594 !important;
+}
+
+html.dark #details-tab-switcher .bg-\[\#008F5B\] {
+  background-color: #21352c !important;
+}
+
+html.dark #details-itemized-card {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #details-itemized-card .divide-\[\#F0F4F2\] > * {
+  border-color: #1c2e25 !important;
+}
+
+html.dark #graphical-breakdown-section {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#F0F4F2\] {
+  background-color: #0e1814 !important;
+  border-color: #21352c !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#F0F4F2\] button {
+  background-color: transparent !important;
+  color: #8fa298 !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#F0F4F2\] button.bg-white {
+  background-color: #163024 !important;
+  color: #10e594 !important;
+}
+
+html.dark
+  #graphical-breakdown-section
+  .bg-\[\#F0F4F2\]
+  button.bg-white.text-\[\#D83B3B\] {
+  background-color: #331518 !important;
+  color: #fb7185 !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#EBF2EE\],
+html.dark #graphical-breakdown-section .bg-\[\#FBF0F0\] {
+  background-color: #1b2a22 !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#F9FCFA\],
+html.dark #graphical-breakdown-section .bg-\[\#FDFBFB\] {
+  background-color: #101a16 !important;
+  border-color: #1f3328 !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#F9FCFA\]:hover,
+html.dark #graphical-breakdown-section .bg-\[\#FDFBFB\]:hover {
+  background-color: #14221d !important;
+  border-color: #294435 !important;
+}
+
+html.dark #graphical-breakdown-section .bg-\[\#EAEFEA\],
+html.dark #graphical-breakdown-section .bg-\[\#FAECEC\] {
+  background-color: #1b2a22 !important;
+}
+
+html.dark #salary-details-screen .from-\[\#FFF5F5\].to-\[\#FFEEED\],
+html.dark .from-\[\#FFF5F5\].to-\[\#FFEEED\] {
+  background: linear-gradient(135deg, #221214 0%, #1a0d0f 100%) !important;
+  border-color: #4d1a1e !important;
+}
+
+html.dark #salary-details-screen .from-\[\#FFF5F5\].to-\[\#FFEEED\] h4 {
+  color: #f1f7f4 !important;
+}
+
+html.dark #bottom-delete-record-btn {
+  background-color: #2d1417 !important;
+  background-image: none !important;
+  border-color: #5a2228 !important;
+  color: #fb7185 !important;
+}
+
+html.dark #bottom-delete-record-btn:hover {
+  background-color: #3d181d !important;
+  border-color: #722b32 !important;
+  color: #fda4af !important;
+}
+
+html.dark #short-comparison-section {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #short-comparison-section > div.grid > div:nth-child(1) {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #203a2d !important;
+}
+
+html.dark #short-comparison-section > div.grid > div:nth-child(2) {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #short-comparison-section > div.grid > div:nth-child(3) {
+  background: #201214 !important;
+  background-image: none !important;
+  border-color: #481f23 !important;
+}
+
+/* Salary Comparison View */
+html.dark #month-selectors-card {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #month-selectors-card select {
+  background-color: #0e1814 !important;
+  border-color: #21352c !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #swap-months-center-btn {
+  background-color: #101a16 !important;
+  border-color: #203a2d !important;
+  color: #10e594 !important;
+}
+
+html.dark #executive-summary-card {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #executive-summary-card > div.grid > div:nth-child(1) {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #203a2d !important;
+}
+
+html.dark #executive-summary-card > div.grid > div:nth-child(2) {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #executive-summary-card > div.grid > div:nth-child(3) {
+  background: #201214 !important;
+  background-image: none !important;
+  border-color: #481f23 !important;
+}
+
+html.dark #executive-summary-card .bg-\[\#E2EBE6\],
+html.dark #executive-summary-card .bg-\[\#FEE2E2\] {
+  background-color: #1b2a22 !important;
+}
+
+html.dark #salary-comparison-screen .bg-\[\#F0F4F2\],
+html.dark #income-comparison-section .bg-\[\#F0F4F2\],
+html.dark #deduction-comparison-section .bg-\[\#F0F4F2\],
+html.dark .bg-\[\#F0F4F2\] {
+  background-color: #1b2b23 !important;
+  color: #9db3a8 !important;
+  border: 1px solid #283f33 !important;
+}
+
+html.dark #comparison-section-tabs {
+  background-color: #101a16 !important;
+  border-color: #21352c !important;
+}
+
+html.dark #comparison-section-tabs button {
+  background-color: #101a16 !important;
+  color: #8fa298 !important;
+}
+
+html.dark #comparison-section-tabs button.bg-\[\#E8F7F0\] {
+  background-color: #163024 !important;
+  color: #10e594 !important;
+}
+
+html.dark #comparison-section-tabs .bg-\[\#008F5B\] {
+  background-color: #21352c !important;
+}
+
+html.dark #income-comparison-section {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #income-comparison-section .bg-\[\#F9FCFA\] {
+  background-color: #101a16 !important;
+  background-image: none !important;
+  border-color: #1f3328 !important;
+}
+
+html.dark #income-comparison-section .bg-\[\#F9FCFA\]:hover {
+  background-color: #14241d !important;
+  border-color: #264234 !important;
+}
+
+html.dark #income-comparison-section .bg-\[\#E4ECE8\] {
+  background-color: #1c2e25 !important;
+}
+
+html.dark #deduction-comparison-section {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #deduction-comparison-section .bg-\[\#FDFBFB\] {
+  background-color: #101a16 !important;
+  background-image: none !important;
+  border-color: #1f3328 !important;
+}
+
+html.dark #deduction-comparison-section .bg-\[\#FDFBFB\]:hover {
+  background-color: #1b1516 !important;
+  border-color: #3d2225 !important;
+}
+
+html.dark #deduction-comparison-section .bg-\[\#E4ECE8\] {
+  background-color: #1c2e25 !important;
+}
+
+/* History Cards */
+html.dark [id^="history-card-"] {
+  background-color: #14221c !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark [id^="history-card-"]:hover {
+  border-color: #1f543c !important;
+  background-color: #182b22 !important;
+}
+
+html.dark [id^="history-card-"].from-white,
+html.dark [id^="history-card-"].bg-gradient-to-br {
+  background: linear-gradient(
+    135deg,
+    #142e22 0%,
+    #10221a 50%,
+    #173628 100%
+  ) !important;
+  border-color: #1f543c !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Trends & Summary Cards */
+html.dark #month-comparison-preview-card {
+  background-color: #14221c !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark #month-comparison-preview-card .grid > button {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #month-comparison-preview-card .grid > button:hover {
+  background: #15251e !important;
+  border-color: #294437 !important;
+}
+
+html.dark #month-comparison-preview-card .grid > button.scale-\[1\.01\],
+html.dark #month-comparison-preview-card .grid > button.ring-1 {
+  background: linear-gradient(135deg, #153124 0%, #10221a 100%) !important;
+  border-color: #1f543c !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.dark #last-three-history-card {
+  background-color: #14221c !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark #last-three-history-card .grid > button {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #last-three-history-card .grid > button:hover {
+  background: #15251e !important;
+  border-color: #294437 !important;
+}
+
+html.dark #last-three-history-card .grid > button.scale-\[1\.02\],
+html.dark #last-three-history-card .grid > button.ring-1 {
+  background: linear-gradient(135deg, #153124 0%, #10221a 100%) !important;
+  border-color: #1f543c !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.dark #reports-month-comparison-card {
+  background-color: #14221c !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark #reports-month-comparison-card > div.grid > div:nth-child(1) {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #203a2d !important;
+}
+
+html.dark #reports-month-comparison-card > div.grid > div:nth-child(2) {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #reports-month-comparison-card > div.grid > div:nth-child(3) {
+  background: #201214 !important;
+  background-image: none !important;
+  border-color: #481f23 !important;
+}
+
+html.dark #reports-monthly-calendar-card,
+html.dark #reports-yearly-calendar-card,
+html.dark #reports-aggregate-calendar-card,
+html.dark #reports-income-breakdown-card,
+html.dark #reports-deduction-breakdown-card,
+html.dark #income-tax-calculator-widget,
+html.dark [id^="comparison-card-"],
+html.dark #income-inputs-card,
+html.dark #deduction-inputs-card {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark #add-extra-income-btn {
+  background: linear-gradient(90deg, #11241b 0%, #163024 100%) !important;
+  border-color: rgba(0, 143, 91, 0.45) !important;
+  color: #10e594 !important;
+}
+html.dark #add-extra-income-btn:hover {
+  background: linear-gradient(90deg, #163024 0%, #1b3d2e 100%) !important;
+  border-color: #008f5b !important;
+  color: #10e594 !important;
+}
+
+html.dark #add-extra-deduction-btn {
+  background: linear-gradient(90deg, #241214 0%, #33181c 100%) !important;
+  border-color: rgba(216, 59, 59, 0.45) !important;
+  color: #fb7185 !important;
+}
+html.dark #add-extra-deduction-btn:hover {
+  background: linear-gradient(90deg, #33181c 0%, #441e24 100%) !important;
+  border-color: #d83b3b !important;
+  color: #fb7185 !important;
+}
+
+html.dark #reports-annual-avg-net-card,
+html.dark #reports-historical-avg-net-card {
+  background: linear-gradient(135deg, #0e1b15 0%, #13241d 100%) !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #reports-monthly-calendar-card button.bg-\[\#F3F7F5\],
+html.dark #reports-monthly-calendar-card .bg-\[\#F3F7F5\] {
+  background-color: #101a16 !important;
+  border-color: #21352c !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #reports-monthly-calendar-card button.bg-\[\#F3F7F5\]:hover,
+html.dark #reports-monthly-calendar-card .bg-\[\#F3F7F5\]:hover {
+  background-color: #192a22 !important;
+}
+
+html.dark #reports-month-picker-toggle-btn:hover,
+html.dark #reports-monthly-calendar-card .hover\:bg-\[\#F3F7F5\]:hover {
+  background-color: #192a22 !important;
+}
+
+html.dark #flutter-calendar-widget {
+  background: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+}
+
+html.dark #flutter-calendar-widget > div:first-child {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #flutter-calendar-widget button.bg-white {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #flutter-calendar-widget button.bg-white\/80 {
+  background-color: #0e1814 !important;
+  border-color: #1f3328 !important;
+  color: #9db3a8 !important;
+}
+
+html.dark #flutter-calendar-widget .bg-white\/70 {
+  background-color: #14221c !important;
+  border-color: #1f3328 !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #auth-section-tabs {
+  background-color: #101a16 !important;
+  border-color: #21352c !important;
+}
+
+html.dark #auth-section-tabs button {
+  background-color: #101a16 !important;
+  color: #8fa298 !important;
+}
+
+html.dark #auth-section-tabs button.bg-\[\#E8F7F0\] {
+  background-color: #163024 !important;
+  color: #10e594 !important;
+}
+
+html.dark #auth-section-tabs button:not(.bg-\[\#E8F7F0\]):hover {
+  background-color: #14241d !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #auth-section-tabs .bg-\[\#008F5B\] {
+  background-color: #21352c !important;
+}
+
+html.dark #kpi-metrics-cards > button:nth-child(1),
+html.dark #reports-kpi-bar > div:nth-child(1) {
+  background: #13201a !important;
+  border-color: #20362c !important;
+}
+
+html.dark #kpi-metrics-cards > button:nth-child(2),
+html.dark #reports-kpi-bar > div:nth-child(2) {
+  background: #221316 !important;
+  border-color: #491f24 !important;
+}
+
+html.dark #kpi-metrics-cards > button:nth-child(3),
+html.dark #reports-kpi-bar > div:nth-child(3) {
+  background: #0e291e !important;
+  border-color: #19523b !important;
+}
+
+html.dark svg circle[fill="none"][stroke="#E9F7F1"],
+html.dark svg circle[fill="none"][stroke="#FFEEEE"],
+html.dark svg circle[fill="none"][stroke="#E2EBE6"] {
+  stroke: #1c2e25 !important;
+}
+
+html.dark .bg-\[\#FFECEC\],
+html.dark .bg-\[\#FEE2E2\],
+html.dark .bg-\[\#E2EBE6\],
+html.dark .bg-\[\#BBF7D0\] {
+  background-color: #1d2e26 !important;
+}
+
+html.dark svg line[stroke="#E6EFEA"],
+html.dark svg line[stroke="#E2EBE6"] {
+  stroke: #20342a !important;
+}
+
+/* Soft Emerald Accents */
+html.dark .bg-\[\#E8F7F0\],
+html.dark .bg-\[\#E9F7F1\],
+html.dark .bg-\[\#F0FDF4\],
+html.dark .bg-\[\#E6F9EE\],
+html.dark .bg-\[\#DCF5E9\],
+html.dark .bg-\[\#D8F3E5\],
+html.dark .bg-\[\#DCFCE7\] {
+  background-color: rgba(0, 168, 107, 0.16) !important;
+}
+
+html.dark .border-\[\#C5EBDB\],
+html.dark .border-\[\#BEEADB\],
+html.dark .border-\[\#86EFAC\],
+html.dark .border-\[\#A4E4D2\] {
+  border-color: rgba(0, 168, 107, 0.3) !important;
+}
+
+/* Soft Red Accents */
+html.dark .bg-\[\#FFF5F5\],
+html.dark .bg-\[\#FDF2F2\],
+html.dark .bg-\[\#FFF0F0\],
+html.dark .bg-\[\#FFF6F6\],
+html.dark .bg-\[\#FEECEE\] {
+  background-color: rgba(220, 38, 38, 0.15) !important;
+}
+
+html.dark .border-\[\#FACDCD\],
+html.dark .border-\[\#FED7D7\],
+html.dark .border-\[\#FDCFD4\],
+html.dark .border-\[\#F5D8D8\] {
+  border-color: rgba(220, 38, 38, 0.3) !important;
+}
+
+/* Soft Amber/Yellow Accents */
+html.dark .bg-\[\#FEF9E7\],
+html.dark .bg-\[\#FFFBEB\] {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+}
+
+html.dark .border-\[\#FBE4A0\],
+html.dark .border-\[\#FDE68A\] {
+  border-color: rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Primary Borders */
+html.dark .border-\[\#E4ECE8\],
+html.dark .border-\[\#E3EAE6\],
+html.dark .border-\[\#E6EFEA\],
+html.dark .border-\[\#D7E0DC\],
+html.dark .border-\[\#E2ECE7\],
+html.dark .border-\[\#D1DDD7\],
+html.dark .border-\[\#D8E6DF\],
+html.dark .border-\[\#E3ECE7\],
+html.dark .border-\[\#E0ECE6\],
+html.dark .border-\[\#E2EBE6\] {
+  border-color: #21352c !important;
+}
+
+/* Typography & Contrast */
+html.dark .text-\[\#17211D\],
+html.dark .text-\[\#08281F\],
+html.dark .text-\[\#0E3B2E\],
+html.dark .text-\[\#2C3B34\],
+html.dark .text-\[\#334155\],
+html.dark .text-\[\#5C6E66\] {
+  color: #f1f7f4 !important;
+}
+
+html.dark .text-\[\#4A5550\],
+html.dark .text-\[\#6E7974\],
+html.dark .text-\[\#8A9791\],
+html.dark .text-\[\#9AA8A1\] {
+  color: #9db3a8 !important;
+}
+
+html.dark .text-\[\#008F5B\],
+html.dark .text-\[\#1B5746\] {
+  color: #10e594 !important;
+}
+
+html.dark .text-\[\#D83B3B\],
+html.dark .text-\[\#DC2626\] {
+  color: #fb7185 !important;
+}
+
+html.dark .text-\[\#D97706\],
+html.dark .text-\[\#B45309\] {
+  color: #fbbf24 !important;
+}
+
+/* Form Controls & Inputs */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #0e1814 !important;
+  color: #f1f7f4 !important;
+  border-color: #283d32 !important;
+}
+
+html.dark input:focus,
+html.dark select:focus,
+html.dark textarea:focus {
+  border-color: #10e594 !important;
+  outline: none !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #647a70 !important;
+}
+
+/* Modals & Dialogs */
+html.dark [role="dialog"],
+html.dark .modal-content,
+html.dark .fixed > div > div.bg-white {
+  background-color: #14221c !important;
+  border-color: #24392e !important;
+  color: #f1f7f4 !important;
+}
+
+/* Auth Cards */
+html.dark #login-card,
+html.dark #register-card,
+html.dark #security-info-card {
+  background-color: #14221c !important;
+  border-color: #21352c !important;
+}
+
+html.dark #biometric-login-button {
+  background-color: #101a16 !important;
+  background-image: none !important;
+  border-color: #21352c !important;
+  color: #9db3a8 !important;
+}
+
+html.dark #biometric-login-button:hover {
+  background-color: #16261e !important;
+  border-color: #2d483a !important;
+  color: #10e594 !important;
+}
+
+html.dark #google-login-button,
+html.dark #google-register-button {
+  background-color: #101a16 !important;
+  border-color: #21352c !important;
+  color: #f1f7f4 !important;
+}
+
+html.dark #google-login-button:hover,
+html.dark #google-register-button:hover {
+  background-color: #16261e !important;
+  border-color: #2d483a !important;
+}
+
+html.dark #password-requirements-card {
+  background-color: #101a16 !important;
+  border-color: #21352c !important;
+}
+
+html.dark .text-white {
+  color: #ffffff !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7e0dc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #008f5b;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #24392e;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #10e594;
+}

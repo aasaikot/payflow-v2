@@ -1,0 +1,163 @@
+{
+  "project_info": {
+    "project_number": "1010469702275",
+    "firebase_url": "https://salary-tracking-a1b5c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "salary-tracking-a1b5c",
+    "storage_bucket": "salary-tracking-a1b5c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010469702275:android:5f2b89f9bad2c0e1a3e9b6",
+        "android_client_info": {
+          "package_name": "com.anan.payflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB68SozBQJwR1Nnen0hTU_cY23zofH2fVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1010469702275-2h4o2sf041gkvmb7dsh3ect012ps3pb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.payflow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010469702275:android:a589041e10ab0974a3e9b6",
+        "android_client_info": {
+          "package_name": "com.anan.soft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB68SozBQJwR1Nnen0hTU_cY23zofH2fVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1010469702275-2h4o2sf041gkvmb7dsh3ect012ps3pb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.payflow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010469702275:android:a1d0f90464cafd25a3e9b6",
+        "android_client_info": {
+          "package_name": "com.example.payflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB68SozBQJwR1Nnen0hTU_cY23zofH2fVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1010469702275-2h4o2sf041gkvmb7dsh3ect012ps3pb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.payflow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010469702275:android:16acec7aedc02db5a3e9b6",
+        "android_client_info": {
+          "package_name": "com.payflow.salaryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010469702275-6rrpmoqj4di4t973er56qv4urv3fv41b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.payflow.salaryapp",
+            "certificate_hash": "507b1d2a0d7e39c2612dc82856025c9a542c9f51"
+          }
+        },
+        {
+          "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB68SozBQJwR1Nnen0hTU_cY23zofH2fVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010469702275-08q7510pqf8kmdrtts7cbdc2jn9odiun.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1010469702275-2h4o2sf041gkvmb7dsh3ect012ps3pb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.payflow"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
